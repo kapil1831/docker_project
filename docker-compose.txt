@@ -1,0 +1,4 @@
+
+docker run -dit --name jenkins --network jenkins_net -v webserver_st:/root/jenkins_data -p 8080:8080  kapil18311/jenkins:v1
+
+docker run -dit --name webserver --network jenkins_net -v webserver_st:/var/www/html -p 81:80   kapil18311/webserver:v1

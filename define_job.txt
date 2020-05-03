@@ -1,0 +1,17 @@
+
+-------------defining job for autoweb deployment using jenkins---------------- 
+
+step1: # define any job  for example: < webdeploy >
+
+step2: # in SCM section provide < git repo URL >
+
+step3: # schedule poll SCM  for every seconds
+
+step4: # In build section copy your git dir from jenkins workspace using 
+<cp -rf ./* /root/jenkins_data/>
+
+here /root/jenkins_data is connnected to same external storage as the /var/www/html/
+
+step5: save job and start
+
+

@@ -1,0 +1,23 @@
+
+------------------------image description---------------------
+
+kapil18311/jenkins:v1
+
+description:
+ 
+1. jenkins installed with java-11 jdk
+2.  git also installed
+3. root is main user of jenkins
+4. ssh is enabled between both containers ie. jenkins and webserver
+5. it autodeploy webpages to webserver container with common storage when job mention in root directory is build.
+6. PORT ADRRESS TRANSLATION is enabled
+7. jenkins service is auto-enabled
+
+
+kapil18311/webserver:v1
+
+description:
+1. ssh and httpd server are installed and jenkins container is allowed host to ssh host through public key
+
+2. /var/www/html/ is mounted to external storage
+3. apache httpd and sshd services are bydefault enabled
