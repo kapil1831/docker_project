@@ -1,0 +1,5 @@
+To start services on command prompt type < /bin/bash docker-compose.txt > from the directory where file is present
+
+jenkins ip : http://<localhostIP>:8080
+
+webserver IP: http://<localhostIP>:81
